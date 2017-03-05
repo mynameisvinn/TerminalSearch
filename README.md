@@ -1,7 +1,7 @@
 # terminal search
 
 ## what is this? 
-google web search from terminal.
+google web search from terminal - `$ goog knicks`
 
 ## get the script
 
