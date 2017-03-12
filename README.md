@@ -26,9 +26,11 @@ $ chmod 755 goog
 ## updating path
 
 ### what is path?
-when you type in the name of a command, bash does not search the entire computer to find the program. how does bash know where to look? it knows because it maintains a list of directories where executables are kept, and just searches the directories in that list. if it does not find the program after searching each directory in the list, it will issue the famous command not found error message.
+when you type in the name of a command, bash does not search the entire computer to find the program. so how does it know where to look? 
 
-you can find this mythical list of directories with `echo $PATH`.
+bash knows because it maintains a list of directories where executables are kept. if it does not find the program after searching each directory in the list, it will issue the famous command not found error message. you can find this mythical list of directories with `echo $PATH`.
+
+for example, homebrew installs all executables in /usr/local/cellar
 
 ### how do i add directories to path?
 one way to update path is `export PATH=$PATH:directory`, where directory is the name of the directory to be searched.
